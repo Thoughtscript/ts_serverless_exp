@@ -15,6 +15,8 @@ A couple examples using [serverless](https://www.serverless.com/framework/docs/p
 
 > If `aws-sdk` is included in handler you may need to use `aws_config.json` or programmatic configuration (even though `serverless` emulates IAM credentials). I tested several scenarios and most required using both some configuration (file/programmatic) and valid credentials.
 
+> **Note:** credentials included in here are dummy/fake.
+
 ## Use
 
 ```bash
