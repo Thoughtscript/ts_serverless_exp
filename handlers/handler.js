@@ -1,6 +1,6 @@
 // serverless invoke 
 module.exports = {
-    example: (event, context) => {
+    example: async (event, context) => {
         let response = {}
         
         console.log(event)
@@ -14,6 +14,6 @@ module.exports = {
         }
 
         console.log(response)
-        return response
+        return await response
     }
 }

@@ -25,6 +25,8 @@ serverless invoke local -f aws -p ../events/event.json
 
 serverless invoke local -f example
 serverless invoke local -f example -p ../events/event.json
+
+node unit_test.js
 ```
 
 ```bash

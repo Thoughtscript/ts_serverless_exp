@@ -3,7 +3,7 @@ interface Response {
     message: string
 }
 
-export const example = (event: object, context: object) => {
+export const example = async (event: object, context: object) => {
     let response: Response = {
         status: 404,
         message: 'default'
@@ -20,5 +20,5 @@ export const example = (event: object, context: object) => {
     }
 
     console.log(response)
-    return response
+    return await response
 }
