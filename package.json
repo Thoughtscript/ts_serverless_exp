@@ -1,0 +1,37 @@
+{
+    "name": "ts_serverless_exp",
+    "version": "1.0.0",
+    "description": "Testing ts and serverless",
+    "scripts": {
+        "start": "node main.js",
+        "stop-win": "Taskkill /IM node.exe /F",
+        "stop-linux": "killall node",
+        "watch": "babel --watch src ---out-dir built --extensions '.ts,.tsx'",
+        "build": "babel src --out-dir built --extensions '.ts,.tsx'",
+        "tsc": "tsc"
+    },
+    "engines": {
+        "node": "=16.9"
+    },
+    "repository": {
+        "type": "git"
+    },
+    "license": "MIT",
+    "keywords": [
+        "serverless",
+        "aws-sdk",
+        "typescript"
+    ],
+    "author": "Adam I. Gerard",
+    "devDependencies": {
+        "@babel/cli": "=7.16.8",
+        "@babel/core": "=7.16.12",
+        "@babel/preset-env": "=7.16.11",
+        "@babel/preset-typescript": "=7.16.7",
+        "serverless": "=3.0.0",
+        "typescript": "=4.5.5"
+    },
+    "dependencies": {
+        "aws-sdk": "=2.1065.0"
+    }
+}

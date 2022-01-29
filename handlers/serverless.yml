@@ -1,0 +1,19 @@
+service: example
+
+provider:
+  name: aws
+  runtime: nodejs14.x
+
+functions:
+  aws:
+    handler: aws.example
+    events:
+      - http:
+          path: example
+          method: post
+  example:
+    handler: handler.example
+    events:
+      - http:
+          path: example
+          method: post

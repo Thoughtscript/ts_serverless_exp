@@ -1,0 +1,20 @@
+service: aws-serverless-exp
+
+provider:
+  name: aws
+  runtime: nodejs14.x
+
+functions:
+  aws:
+    handler: built/handlers/aws.example
+    events:
+      - http:
+          path: example
+          method: post
+  example:
+    handler: built/handlers/handler.example
+    events:
+      - http:
+          path: example
+          method: post
+    
